@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 2,
+    "failures": -1,
+    "start": "2022-12-03T01:24:33.656Z",
+    "end": "2022-12-03T01:24:33.679Z",
+    "duration": 23,
+    "testsRegistered": 2,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "e7ff15ca-54c6-441b-b2f4-78a768031ea6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\login.cy.js",
+      "file": "cypress\\e2e\\test\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "328a94aa-2fd2-4b26-a137-4660574fde9a",
+          "title": "login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should login with valid credentials",
+              "fullTitle": "login Should login with valid credentials",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.inventory_item_name').should('be.visible');",
+              "err": {},
+              "uuid": "0add79e8-590c-4ea7-85bc-64936656a31c",
+              "parentUUID": "328a94aa-2fd2-4b26-a137-4660574fde9a",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Should login with invalid credentials",
+              "fullTitle": "login Should login with invalid credentials",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.inventory_item_name').should('be.visible');",
+              "err": {},
+              "uuid": "f30f8e59-8839-4f61-a5fa-29493e695631",
+              "parentUUID": "328a94aa-2fd2-4b26-a137-4660574fde9a",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "0add79e8-590c-4ea7-85bc-64936656a31c",
+            "f30f8e59-8839-4f61-a5fa-29493e695631"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

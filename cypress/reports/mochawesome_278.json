@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-12-03T00:09:45.052Z",
+    "end": "2022-12-03T00:09:52.885Z",
+    "duration": 7833,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "acee244c-e5b2-4228-8a60-7349e6ff55d7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eddb4ad3-4c81-47cc-826e-585a6236c9de",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add multiple items to cart",
+              "fullTitle": "Add To Cart Should add multiple items to cart",
+              "timedOut": null,
+              "duration": 7762,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkout.default.checkoutMultipleData('Mickayla', 'Crossdale', 'JMACE25');\ncy.get('.summary_total_label').should('have.text', '82.05');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<div.summary_total_label>' to have text '82.05', but the text was 'Total: $82.05'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div.summary_total_label>' to have text '82.05', but the text was 'Total: $82.05'\n    at Context.eval (webpack:///./cypress/e2e/test/addToCart.cy.js:46:39)",
+                "diff": "- 'Total: $82.05'\n+ '82.05'\n"
+              },
+              "uuid": "d9172bc8-1d89-48ea-80d1-6b38bdfa8190",
+              "parentUUID": "eddb4ad3-4c81-47cc-826e-585a6236c9de",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d9172bc8-1d89-48ea-80d1-6b38bdfa8190"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7762,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

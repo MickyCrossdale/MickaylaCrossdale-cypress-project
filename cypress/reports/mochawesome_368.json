@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-12-03T15:08:45.401Z",
+    "end": "2022-12-03T15:08:49.614Z",
+    "duration": 4213,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "51d902df-1813-44e1-94f6-32b8caeeb571",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "24103ba4-a854-45f9-86e9-20b5c7328d18",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should not checkout without inserting checkout information",
+              "fullTitle": "Add To Cart Should not checkout without inserting checkout information",
+              "timedOut": null,
+              "duration": 2372,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkoutInformation.default.checkoutInformation();\ncy.get('.error-message-container.error').should('be.visible');",
+              "err": {},
+              "uuid": "fb626732-c3c2-453e-a88d-fb3889290a39",
+              "parentUUID": "24103ba4-a854-45f9-86e9-20b5c7328d18",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should not checkout without inserting Postal Code",
+              "fullTitle": "Add To Cart Should not checkout without inserting Postal Code",
+              "timedOut": null,
+              "duration": 1769,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkoutNoPostalCode.default.checkoutNoPostalCode();\ncy.get('.error-message-container.error').should('be.visible');",
+              "err": {
+                "message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n\nhttps://on.cypress.io/type",
+                "estack": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n\nhttps://on.cypress.io/type\n    at Context.type (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:137606:76)\n    at wrapped (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:157819:19)\nFrom Your Spec Code:\n    at checkoutNoPostalCode (webpack:///./cypress/e2e/page/checkoutNoPostalCode.page.js:22:34)\n    at Context.eval (webpack:///./cypress/e2e/test/addToCart.cy.js:66:33)",
+                "diff": null
+              },
+              "uuid": "b5d6d4c2-522b-4f36-ba1f-e3ba7a5ae86a",
+              "parentUUID": "24103ba4-a854-45f9-86e9-20b5c7328d18",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fb626732-c3c2-453e-a88d-fb3889290a39"
+          ],
+          "failures": [
+            "b5d6d4c2-522b-4f36-ba1f-e3ba7a5ae86a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4141,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

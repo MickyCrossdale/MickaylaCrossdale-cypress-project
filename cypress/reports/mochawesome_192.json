@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-12-02T17:02:47.622Z",
+    "end": "2022-12-02T17:02:50.100Z",
+    "duration": 2478,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ff8bdf9e-361d-403b-a30c-c6102a1e0807",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\sort.cy.js",
+      "file": "cypress\\e2e\\test\\sort.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2722b729-a0a5-4324-abb2-0683c66cfe56",
+          "title": "Filter",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should sort product list from low-high",
+              "fullTitle": "Filter should sort product list from low-high",
+              "timedOut": null,
+              "duration": 2334,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.product_sort_container').select('lohi');\nvar productPrice = ['29.99', '9.99', '15.99', '49.99', '7.99', '15.99'];\nproductPrice.sort();\ncy.get('.inventory_item_price').each(($elem, index) => {\n  expect($elem.text()).each(productPrice[index]);\n});",
+              "err": {
+                "message": "Error: Invalid Chai property: each. Did you mean \"match\"?",
+                "estack": "Error: Invalid Chai property: each. Did you mean \"match\"?\n    at Object.proxyGetter [as get] (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:83350:17)\n    at Context.callback (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:139638:26)\n    at getRet (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:139235:20)\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:11327:23)\n    at Promise.attempt.Promise.try (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:139249:63)\n    at yieldItem (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:139647:16)\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:11327:23)\n    at Object.gotValue (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:10469:18)\n    at Object.gotAccum (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:10458:25)\n    at Object.tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:11327:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9262:31)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9319:18)\n    at Promise._settlePromiseCtx (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:6027:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:6043:5)\n    at Async.drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:5913:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/test/sort.cy.js:30:12)",
+                "diff": null
+              },
+              "uuid": "36e971f1-9ee2-4682-80d0-2cb063a41372",
+              "parentUUID": "2722b729-a0a5-4324-abb2-0683c66cfe56",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "36e971f1-9ee2-4682-80d0-2cb063a41372"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2334,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

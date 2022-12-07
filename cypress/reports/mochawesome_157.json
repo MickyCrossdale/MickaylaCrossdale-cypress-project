@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-12-01T16:06:13.253Z",
+    "end": "2022-12-01T16:06:16.978Z",
+    "duration": 3725,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5d6fa077-50f1-48ac-8e8f-8d84babb0334",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\sort.cy.js",
+      "file": "cypress\\e2e\\test\\sort.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4d656018-7fd8-4af6-b238-8290b30ad5fc",
+          "title": "Filter",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should sort product list from low-high",
+              "fullTitle": "Filter should sort product list from low-high",
+              "timedOut": null,
+              "duration": 3647,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.product_sort_container').select('lohi');\nvar productList = ['Sauce Labs Backpack', 'Sauce Labs Bike Light', 'Sauce Labs Bolt T-Shirt', 'Sauce Labs Fleece Jacket', 'Sauce Labs Onesie', 'Test.allTheThings() T-Shirt (Red)'];\nproductList.sort().reverse();\ncy.get('.inventory_item_name').each(($elem, index) => {\n  expect($elem.text()).equal(productList[index]);\n});",
+              "err": {
+                "message": "AssertionError: expected 'Sauce Labs Onesie' to equal 'Test.allTheThings() T-Shirt (Red)'",
+                "estack": "AssertionError: expected 'Sauce Labs Onesie' to equal 'Test.allTheThings() T-Shirt (Red)'\n    at Context.eval (webpack:///./cypress/e2e/test/sort.cy.js:30:33)",
+                "diff": "- 'Sauce Labs Onesie'\n+ 'Test.allTheThings() T-Shirt (Red)'\n"
+              },
+              "uuid": "75d69af0-bb82-43ee-a7e7-8b38d4682a28",
+              "parentUUID": "4d656018-7fd8-4af6-b238-8290b30ad5fc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "75d69af0-bb82-43ee-a7e7-8b38d4682a28"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3647,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

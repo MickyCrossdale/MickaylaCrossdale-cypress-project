@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 1,
+    "failures": 0,
+    "start": "2022-12-07T00:25:54.801Z",
+    "end": "2022-12-07T00:25:54.842Z",
+    "duration": 41,
+    "testsRegistered": 1,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "3caad8ec-5634-4a33-b112-d4040eb587fb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\checkoutInfo.cy.js",
+      "file": "cypress\\e2e\\test\\checkoutInfo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c78459a7-3be9-4337-a045-e899c225993e",
+          "title": "Check Out Info",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should navigate to the check out info page",
+              "fullTitle": "Check Out Info Should navigate to the check out info page",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "addToCartPage.addToCart('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');\ncy.get('#react-burger-menu-btn');",
+              "err": {},
+              "uuid": "2f3b13bf-a3bd-447c-9d61-36ba6b286906",
+              "parentUUID": "c78459a7-3be9-4337-a045-e899c225993e",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "2f3b13bf-a3bd-447c-9d61-36ba6b286906"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

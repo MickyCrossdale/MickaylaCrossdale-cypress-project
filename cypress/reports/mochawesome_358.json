@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-12-03T15:02:56.650Z",
+    "end": "2022-12-03T15:02:59.631Z",
+    "duration": 2981,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c1fd136c-b1dd-4759-b6d0-db33677c910a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7b8bc91c-4997-46fb-bdb7-03920e8c9d6a",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should not checkout without inserting checkout information",
+              "fullTitle": "Add To Cart Should not checkout without inserting checkout information",
+              "timedOut": null,
+              "duration": 2398,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkoutInformation.default.checkoutInformation();\ncy.get('.error-message-container.error').should('be.visible');",
+              "err": {},
+              "uuid": "a451a899-f8c1-4d3c-833d-a0edc5b3b985",
+              "parentUUID": "7b8bc91c-4997-46fb-bdb7-03920e8c9d6a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should not checkout without inserting Postal Code",
+              "fullTitle": "Add To Cart Should not checkout without inserting Postal Code",
+              "timedOut": null,
+              "duration": 507,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkout.default.checkoutInformation();\ncy.get('.error-message-container.error').should('be.visible');",
+              "err": {
+                "message": "TypeError: _checkout.default.checkoutInformation is not a function",
+                "estack": "TypeError: _checkout.default.checkoutInformation is not a function\n    at Context.eval (webpack:///./cypress/e2e/test/addToCart.cy.js:66:33)",
+                "diff": null
+              },
+              "uuid": "38bc63d9-b00d-462b-bb23-2adfd2c70b81",
+              "parentUUID": "7b8bc91c-4997-46fb-bdb7-03920e8c9d6a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a451a899-f8c1-4d3c-833d-a0edc5b3b985"
+          ],
+          "failures": [
+            "38bc63d9-b00d-462b-bb23-2adfd2c70b81"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2905,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

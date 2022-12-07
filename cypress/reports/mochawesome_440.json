@@ -1,0 +1,225 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-12-07T00:38:28.222Z",
+    "end": "2022-12-07T00:38:33.793Z",
+    "duration": 5571,
+    "testsRegistered": 7,
+    "passPercent": 28.57142857142857,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 4,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "892feb5e-cf8e-4972-b6de-e872cdae70a2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "36b22c64-c521-43c8-aab7-062727e077f8",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add an Item to cart",
+              "fullTitle": "Add To Cart Should add an Item to cart",
+              "timedOut": null,
+              "duration": 1928,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_addToCart.default.addToCart('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');\ncy.get('#react-burger-menu-btn');",
+              "err": {},
+              "uuid": "645eaa5d-4950-4e9d-854c-0a2890a07202",
+              "parentUUID": "36b22c64-c521-43c8-aab7-062727e077f8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should checkout with multiple items in cart",
+              "fullTitle": "Add To Cart Should checkout with multiple items in cart",
+              "timedOut": null,
+              "duration": 3084,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkout.default.checkout('Mickayla', 'Crossdale', 'JMACE25');\ncy.get('.complete-header').should('be.visible');",
+              "err": {},
+              "uuid": "ba889af3-2504-4cb3-94f9-043953f5cc61",
+              "parentUUID": "36b22c64-c521-43c8-aab7-062727e077f8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should have a single item in cart",
+              "fullTitle": "Add To Cart Should have a single item in cart",
+              "timedOut": null,
+              "duration": 497,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkout.default.checkoutSingle();\ncy.get('.inventory_item_name').should('be.visible');",
+              "err": {
+                "message": "TypeError: Cannot set property message of  which has only a getter\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Add To Cart`",
+                "estack": "TypeError: Cannot set property message of  which has only a getter\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Add To Cart`\n    at modifyErrMsg (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:161163:15)\n    at Object.appendErrMsg (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:161169:10)\n    at Runner.<anonymous> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:164873:76)\n    at Runner.emit (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:20883:7)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.fail (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:108412:8)\n    at Runner.fail (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:163046:25)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.failHook (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:108450:8)\n    at Hook.<anonymous> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:108524:14)\n    at next (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:165309:24)\n    at https://www.saucedemo.com/__cypress/runner/cypress_runner.js:165338:13\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:11327:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9262:31)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9319:18)\n    at Promise._settlePromise0 (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9364:10)\n    at Promise._settlePromises (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9444:18)\n    at Promise._fulfill (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9388:18)\n    at Promise._resolveCallback (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9182:57)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9274:17)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9319:18)\n    at Promise._settlePromise0 (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9364:10)\n    at Promise._settlePromises (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9444:18)\n    at Promise._fulfill (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9388:18)",
+                "diff": null
+              },
+              "uuid": "5a4a6b1e-cf10-4962-bb54-721001283c55",
+              "parentUUID": "36b22c64-c521-43c8-aab7-062727e077f8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should have multiple items in cart overview",
+              "fullTitle": "Add To Cart Should have multiple items in cart overview",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkout.default.checkoutOverview('Mickayla', 'Crossdale', 'JMACE25');\ncy.get('.inventory_item_name').should('be.visible');",
+              "err": {},
+              "uuid": "336b524e-9083-4d0f-a174-5a19a5531d4b",
+              "parentUUID": "36b22c64-c521-43c8-aab7-062727e077f8",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Should add multiple items to cart",
+              "fullTitle": "Add To Cart Should add multiple items to cart",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkout.default.checkoutMultipleData('Mickayla', 'Crossdale', 'JMACE25');\ncy.get('.summary_total_label').should('have.text', '82.05');",
+              "err": {},
+              "uuid": "e1dd055c-2ed9-47d4-9ab8-421de7302310",
+              "parentUUID": "36b22c64-c521-43c8-aab7-062727e077f8",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Should not checkout without inserting checkout information",
+              "fullTitle": "Add To Cart Should not checkout without inserting checkout information",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkoutInformation.default.checkoutInformation();\ncy.get('.error-message-container.error').should('be.visible');",
+              "err": {},
+              "uuid": "2ce3e96b-afe5-4bdc-89b6-c21ec62ed0fb",
+              "parentUUID": "36b22c64-c521-43c8-aab7-062727e077f8",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Should not checkout without inserting Postal Code",
+              "fullTitle": "Add To Cart Should not checkout without inserting Postal Code",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkoutNoPostalCode.default.checkoutNoPostalCode('Mickayla', 'Crossdale');\ncy.get('.error-message-container.error').should('be.visible');",
+              "err": {},
+              "uuid": "cb9fb2d9-409e-4a00-bb06-b1d922e243c8",
+              "parentUUID": "36b22c64-c521-43c8-aab7-062727e077f8",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "645eaa5d-4950-4e9d-854c-0a2890a07202",
+            "ba889af3-2504-4cb3-94f9-043953f5cc61"
+          ],
+          "failures": [
+            "5a4a6b1e-cf10-4962-bb54-721001283c55"
+          ],
+          "pending": [],
+          "skipped": [
+            "336b524e-9083-4d0f-a174-5a19a5531d4b",
+            "e1dd055c-2ed9-47d4-9ab8-421de7302310",
+            "2ce3e96b-afe5-4bdc-89b6-c21ec62ed0fb",
+            "cb9fb2d9-409e-4a00-bb06-b1d922e243c8"
+          ],
+          "duration": 5509,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

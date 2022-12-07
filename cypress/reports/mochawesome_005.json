@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-11-29T02:03:17.422Z",
+    "end": "2022-11-29T02:03:18.513Z",
+    "duration": 1091,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c1a0d581-32dc-45d1-83f4-1bc12e57cb13",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "file": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "342d10fb-f99e-4321-84c3-32ae93c2d862",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add multiple items to cart",
+              "fullTitle": "Add To Cart Should add multiple items to cart",
+              "timedOut": null,
+              "duration": 1035,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_addToCartMltple.default.addToCartMultiple('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-backpack', '#add-to-cart-sauce-labs-fleece-jacket', '#add-to-cart-sauce-labs-bike-light').should('be.visible');",
+              "err": {
+                "message": "TypeError: _addToCartMltple.default.addToCartMultiple is not a function",
+                "estack": "TypeError: _addToCartMltple.default.addToCartMultiple is not a function\n    at Context.eval (webpack:///./cypress/e2e/test/addToCartMltple.cy.js:10:22)",
+                "diff": null
+              },
+              "uuid": "eb3ee6ba-d6ef-445e-a1ed-e915002af698",
+              "parentUUID": "342d10fb-f99e-4321-84c3-32ae93c2d862",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "eb3ee6ba-d6ef-445e-a1ed-e915002af698"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1035,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

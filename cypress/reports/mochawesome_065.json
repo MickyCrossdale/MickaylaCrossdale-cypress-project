@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-11-30T04:35:35.610Z",
+    "end": "2022-11-30T04:35:39.040Z",
+    "duration": 3430,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e91ba452-6c51-40ca-b30d-878a219f07d8",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "af0e96c3-b31e-4f66-a2cf-bdff74ef5e1a",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add an Item to cart",
+              "fullTitle": "Add To Cart Should add an Item to cart",
+              "timedOut": null,
+              "duration": 1586,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_addToCart.default.addToCart('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');\ncy.get('#react-burger-menu-btn');",
+              "err": {},
+              "uuid": "e32ff638-f3dc-432f-bfd0-10d7685a5b34",
+              "parentUUID": "af0e96c3-b31e-4f66-a2cf-bdff74ef5e1a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should add multiple items to cart",
+              "fullTitle": "Add To Cart Should add multiple items to cart",
+              "timedOut": null,
+              "duration": 1791,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_addToCart.default.addToCart('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').click();\ncy.get('#add-to-cart-sauce-labs-bike-light').click();\ncy.get('#add-to-cart-sauce-labs-bolt-t-shirt').click();",
+              "err": {},
+              "uuid": "8b287d07-9726-4a79-8b93-692eae9651d1",
+              "parentUUID": "af0e96c3-b31e-4f66-a2cf-bdff74ef5e1a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e32ff638-f3dc-432f-bfd0-10d7685a5b34",
+            "8b287d07-9726-4a79-8b93-692eae9651d1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3377,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

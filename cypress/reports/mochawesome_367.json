@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 2,
+    "failures": -1,
+    "start": "2022-12-03T15:06:04.667Z",
+    "end": "2022-12-03T15:06:04.709Z",
+    "duration": 42,
+    "testsRegistered": 2,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "0db203b8-5d54-4973-a10c-0573595c90c6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\sort.cy.js",
+      "file": "cypress\\e2e\\test\\sort.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e198b55d-1f27-47c4-aec3-558e0173bfab",
+          "title": "Filter",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should sort product list from low-high",
+              "fullTitle": "Filter should sort product list from low-high",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.product_sort_container').select('lohi');\nvar productPrice = [29.99, 9.99, 15.99, 49.99, 7.99, 15.99];\nproductPrice.sort();\ncy.get('.inventory_item_price').each(($elem, index) => {\n  expect($elem.text().replace('$', '')).equal(productPrice[index]);\n});",
+              "err": {},
+              "uuid": "08c1c552-1fc8-4d59-a853-89e260dd84fd",
+              "parentUUID": "e198b55d-1f27-47c4-aec3-558e0173bfab",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should sort product list from high-low",
+              "fullTitle": "Filter should sort product list from high-low",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.product_sort_container').select('hilo');\nvar productPrice = [29.99, 9.99, 15.99, 49.99, 7.99, 15.99];\nproductPrice.sort().reverse();\ncy.get('.inventory_item_price').each(($elem, index) => {\n  expect($elem.text()).equal(productPrice[index]);\n});",
+              "err": {},
+              "uuid": "4b8a9e75-bf2a-4f65-904b-3ef8a03bae07",
+              "parentUUID": "e198b55d-1f27-47c4-aec3-558e0173bfab",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "08c1c552-1fc8-4d59-a853-89e260dd84fd",
+            "4b8a9e75-bf2a-4f65-904b-3ef8a03bae07"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

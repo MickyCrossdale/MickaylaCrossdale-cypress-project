@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 1,
+    "failures": 0,
+    "start": "2022-12-03T17:13:29.477Z",
+    "end": "2022-12-03T17:13:29.508Z",
+    "duration": 31,
+    "testsRegistered": 1,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "7ee248d0-6285-4808-9deb-1f7b08c2375b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\removeItemProductList.cy.js",
+      "file": "cypress\\e2e\\test\\removeItemProductList.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2862fc42-dc3a-4931-8395-a0d08a0639c7",
+          "title": "Remove from Product List",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should remove an Item from Product List",
+              "fullTitle": "Remove from Product List Should remove an Item from Product List",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_removeItemProductList.default.removeFromProductList('Mickayla', 'Crossdale', 'JMACE25');\ncy.get('.title').should('be.visible');",
+              "err": {},
+              "uuid": "9d310276-fd58-4d37-8874-a3f2c9eaac5f",
+              "parentUUID": "2862fc42-dc3a-4931-8395-a0d08a0639c7",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "9d310276-fd58-4d37-8874-a3f2c9eaac5f"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-12-02T18:42:27.501Z",
+    "end": "2022-12-02T18:42:29.310Z",
+    "duration": 1809,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "95dfbd57-f953-42ac-b251-f04ff72e2987",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\sort.cy.js",
+      "file": "cypress\\e2e\\test\\sort.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d4e05932-7dcc-4eb8-93e7-f0ea76baa83e",
+          "title": "Filter",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should sort product list from low-high",
+              "fullTitle": "Filter should sort product list from low-high",
+              "timedOut": null,
+              "duration": 1343,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.product_sort_container').select('lohi');\nvar productPrice = ['29.99', '9.99', '15.99', '49.99', '7.99', '15.99'];\nproductPrice.sort().each();\ncy.get('.inventory_item_price').each(($elem, index) => {\n  expect($elem.text()).reverse(productPrice[index]);\n});",
+              "err": {
+                "message": "TypeError: productPrice.sort(...).each is not a function",
+                "estack": "TypeError: productPrice.sort(...).each is not a function\n    at Context.eval (webpack:///./cypress/e2e/test/sort.cy.js:27:28)",
+                "diff": null
+              },
+              "uuid": "d291f06d-2455-4e9b-a862-68f1c18c53f5",
+              "parentUUID": "d4e05932-7dcc-4eb8-93e7-f0ea76baa83e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should sort product list from high-low",
+              "fullTitle": "Filter should sort product list from high-low",
+              "timedOut": null,
+              "duration": 363,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.product_sort_container').select('hilo');\nvar productPrice = ['29.99', '9.99', '15.99', '49.99', '7.99', '15.99'];\nproductPrice.sort().each();\ncy.get('.inventory_item_price').each(($elem, index) => {\n  expect($elem.text()).equal(productPrice[index]);\n});",
+              "err": {
+                "message": "TypeError: productPrice.sort(...).each is not a function",
+                "estack": "TypeError: productPrice.sort(...).each is not a function\n    at Context.eval (webpack:///./cypress/e2e/test/sort.cy.js:52:28)",
+                "diff": null
+              },
+              "uuid": "3830f5f6-5db6-4a21-aeb3-4521e40444dc",
+              "parentUUID": "d4e05932-7dcc-4eb8-93e7-f0ea76baa83e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d291f06d-2455-4e9b-a862-68f1c18c53f5",
+            "3830f5f6-5db6-4a21-aeb3-4521e40444dc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1706,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

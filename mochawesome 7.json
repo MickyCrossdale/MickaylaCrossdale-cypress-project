@@ -1,0 +1,1371 @@
+{
+  "stats": {
+    "suites": 22,
+    "tests": 23,
+    "passes": 3,
+    "pending": 0,
+    "failures": 7,
+    "start": "2022-11-26T19:24:28.339Z",
+    "end": "2022-11-29T02:41:31.041Z",
+    "duration": 29588,
+    "testsRegistered": 23,
+    "passPercent": 13.043478260869565,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 13,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "0f1074d1-1f63-4a57-b38f-9c0d4bd16974",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\login.cy.js",
+      "file": "cypress\\e2e\\test\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "59c0b97a-f7df-4410-9f18-77023aeb26f7",
+          "title": "login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should login with valid credentials",
+              "fullTitle": "login Should login with valid credentials",
+              "timedOut": null,
+              "duration": 1538,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.inventory_item_name').should('be.visible');",
+              "err": {},
+              "uuid": "a72a386f-69a3-4590-b0a2-3bbee81bb2d6",
+              "parentUUID": "59c0b97a-f7df-4410-9f18-77023aeb26f7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a72a386f-69a3-4590-b0a2-3bbee81bb2d6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1538,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "a557d576-8f73-4f47-88b6-8ee0234d438e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5a36c682-02aa-461c-8980-113f5aebb546",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add an Item to cart",
+              "fullTitle": "Add To Cart Should add an Item to cart",
+              "timedOut": null,
+              "duration": 1609,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_addToCart.default.addToCart('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');",
+              "err": {},
+              "uuid": "9f2edd0e-ac66-4919-9657-f4f7e3961f9a",
+              "parentUUID": "5a36c682-02aa-461c-8980-113f5aebb546",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should add multiple items to cart",
+              "fullTitle": "Add To Cart Should add multiple items to cart",
+              "timedOut": null,
+              "duration": 1492,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_addToCart.default.addToCartMultiple('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-backpack', '#add-to-cart-sauce-labs-fleece-jacket', '#add-to-cart-sauce-labs-bike-light').should('be.visible');",
+              "err": {
+                "message": "CypressError: `cy.get()` only accepts an options object for its second argument. You passed #add-to-cart-sauce-labs-fleece-jacket\n\nhttps://on.cypress.io/get",
+                "estack": "CypressError: `cy.get()` only accepts an options object for its second argument. You passed #add-to-cart-sauce-labs-fleece-jacket\n\nhttps://on.cypress.io/get\n    at Context.get (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:143115:85)\n    at wrapped (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:157809:43)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/test/addToCart.cy.js:17:11)",
+                "diff": null
+              },
+              "uuid": "09a29380-f04d-4167-bf5c-ae3bb87499f5",
+              "parentUUID": "5a36c682-02aa-461c-8980-113f5aebb546",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9f2edd0e-ac66-4919-9657-f4f7e3961f9a"
+          ],
+          "failures": [
+            "09a29380-f04d-4167-bf5c-ae3bb87499f5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3101,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f2e141f9-4ae1-48b7-a087-83e704552f2c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\login.cy.js",
+      "file": "cypress\\e2e\\test\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "974a77a4-889e-4c39-a2ab-b64d5c2bf16e",
+          "title": "login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should login with valid credentials",
+              "fullTitle": "login Should login with valid credentials",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.inventory_item_name').should('be.visible');",
+              "err": {},
+              "uuid": "1fdd7d89-745a-4d7e-a0fc-c07542ee4692",
+              "parentUUID": "974a77a4-889e-4c39-a2ab-b64d5c2bf16e",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "1fdd7d89-745a-4d7e-a0fc-c07542ee4692"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "9d770eb5-1cc1-4d9e-b483-7fbc43b12f88",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4a07c167-6284-4e92-abf1-a264cb4f122a",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add an Item to cart",
+              "fullTitle": "Add To Cart Should add an Item to cart",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_addToCart.default.addToCart('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');",
+              "err": {},
+              "uuid": "494adcbe-9b31-4544-a847-080621ac371b",
+              "parentUUID": "4a07c167-6284-4e92-abf1-a264cb4f122a",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "494adcbe-9b31-4544-a847-080621ac371b"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c1a0d581-32dc-45d1-83f4-1bc12e57cb13",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "file": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "342d10fb-f99e-4321-84c3-32ae93c2d862",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add multiple items to cart",
+              "fullTitle": "Add To Cart Should add multiple items to cart",
+              "timedOut": null,
+              "duration": 1035,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_addToCartMltple.default.addToCartMultiple('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-backpack', '#add-to-cart-sauce-labs-fleece-jacket', '#add-to-cart-sauce-labs-bike-light').should('be.visible');",
+              "err": {
+                "message": "TypeError: _addToCartMltple.default.addToCartMultiple is not a function",
+                "estack": "TypeError: _addToCartMltple.default.addToCartMultiple is not a function\n    at Context.eval (webpack:///./cypress/e2e/test/addToCartMltple.cy.js:10:22)",
+                "diff": null
+              },
+              "uuid": "eb3ee6ba-d6ef-445e-a1ed-e915002af698",
+              "parentUUID": "342d10fb-f99e-4321-84c3-32ae93c2d862",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "eb3ee6ba-d6ef-445e-a1ed-e915002af698"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1035,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e20dd369-7015-4e1c-ade2-e97f0c3edc8a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\login.cy.js",
+      "file": "cypress\\e2e\\test\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "61bd262e-bab0-43ac-9131-3818b8bc238f",
+          "title": "login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should login with valid credentials",
+              "fullTitle": "login Should login with valid credentials",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.inventory_item_name').should('be.visible');",
+              "err": {},
+              "uuid": "7c8f4eba-d895-45ce-8fc0-a2399ac813e8",
+              "parentUUID": "61bd262e-bab0-43ac-9131-3818b8bc238f",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "7c8f4eba-d895-45ce-8fc0-a2399ac813e8"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c5e653a2-45d8-4acb-aeac-b0643fc1b8c0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "080f679d-5e05-461f-a922-b9a294a49162",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add an Item to cart",
+              "fullTitle": "Add To Cart Should add an Item to cart",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_addToCart.default.addToCart('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');",
+              "err": {},
+              "uuid": "40636adc-a16d-4f55-8e00-e7964daa1c4c",
+              "parentUUID": "080f679d-5e05-461f-a922-b9a294a49162",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "40636adc-a16d-4f55-8e00-e7964daa1c4c"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c73d56b3-4c2e-4c26-a3fc-8d78bbd96ac2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "file": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "259bae94-6881-43b5-af15-ad0114a4221e",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add multiple items to cart",
+              "fullTitle": "Add To Cart Should add multiple items to cart",
+              "timedOut": null,
+              "duration": 927,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_addToCartMltple.default.addToCartMultiple('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-backpack').should('be.visible');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');\ncy.get('#add-to-cart-sauce-labs-bike-light').should('be.visible');",
+              "err": {
+                "message": "TypeError: _addToCartMltple.default.addToCartMultiple is not a function",
+                "estack": "TypeError: _addToCartMltple.default.addToCartMultiple is not a function\n    at Context.eval (webpack:///./cypress/e2e/test/addToCartMltple.cy.js:10:22)",
+                "diff": null
+              },
+              "uuid": "c485106f-7f8f-4f29-9a5f-3109e3cb56cc",
+              "parentUUID": "259bae94-6881-43b5-af15-ad0114a4221e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c485106f-7f8f-4f29-9a5f-3109e3cb56cc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 927,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "14fc0aac-a89e-4392-892a-0e2c3f5c0787",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\login.cy.js",
+      "file": "cypress\\e2e\\test\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e542d553-7a79-4992-942f-f4ad8ba791a2",
+          "title": "login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should login with valid credentials",
+              "fullTitle": "login Should login with valid credentials",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.inventory_item_name').should('be.visible');",
+              "err": {},
+              "uuid": "1db11828-32f9-4ba3-be4f-4df45f5991be",
+              "parentUUID": "e542d553-7a79-4992-942f-f4ad8ba791a2",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "1db11828-32f9-4ba3-be4f-4df45f5991be"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "a272dd0c-4fba-4721-86a6-022b00732c38",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0c13c94a-f286-4f8c-b414-ae51553d7784",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add an Item to cart",
+              "fullTitle": "Add To Cart Should add an Item to cart",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_addToCart.default.addToCart('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');",
+              "err": {},
+              "uuid": "ffa71caf-01fe-417f-a44e-53a80c734268",
+              "parentUUID": "0c13c94a-f286-4f8c-b414-ae51553d7784",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "ffa71caf-01fe-417f-a44e-53a80c734268"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "20e3d34b-f05a-465c-82ef-bc371e21bf4f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "file": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "304abceb-264a-4d49-b475-17a1a2e93ad5",
+          "title": "Add To Cart Multiple",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add multiple items to cart",
+              "fullTitle": "Add To Cart Multiple Should add multiple items to cart",
+              "timedOut": null,
+              "duration": 6084,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_addToCartMltple.default.addToCartMultiple('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-backpack').should('be.visible');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');\ncy.get('#add-to-cart-sauce-labs-bike-light').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[name=\"add-to-cart-sauce-labs-bike-light]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[name=\"add-to-cart-sauce-labs-bike-light]`, but never found it.\n    at addToCartMultiple (webpack:///./cypress/e2e/page/addToCartMltple.page.js:17:11)\n    at Context.eval (webpack:///./cypress/e2e/test/addToCartMltple.cy.js:10:30)",
+                "diff": null
+              },
+              "uuid": "78334d63-a2f0-40ff-8858-cdc86a44fd80",
+              "parentUUID": "304abceb-264a-4d49-b475-17a1a2e93ad5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "78334d63-a2f0-40ff-8858-cdc86a44fd80"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6084,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "bc43c7b0-01a6-46e4-a0c3-e4b82ecabaf9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\login.cy.js",
+      "file": "cypress\\e2e\\test\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4db5d841-cc62-4643-a960-daa027387bdf",
+          "title": "login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should login with valid credentials",
+              "fullTitle": "login Should login with valid credentials",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.inventory_item_name').should('be.visible');",
+              "err": {},
+              "uuid": "b10432f6-f1c3-4c06-b79f-a196b0c12f99",
+              "parentUUID": "4db5d841-cc62-4643-a960-daa027387bdf",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "b10432f6-f1c3-4c06-b79f-a196b0c12f99"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c078dc5a-b846-40f5-97d2-a146badeff64",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "df8b5063-b81b-4d5e-8ab1-0e135f5d4c23",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add an Item to cart",
+              "fullTitle": "Add To Cart Should add an Item to cart",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_addToCart.default.addToCart('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');",
+              "err": {},
+              "uuid": "0e8b2044-9873-46cc-b9db-ea50eb0a4fc3",
+              "parentUUID": "df8b5063-b81b-4d5e-8ab1-0e135f5d4c23",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "0e8b2044-9873-46cc-b9db-ea50eb0a4fc3"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7fedc36c-2fd5-4387-9ece-aab7e07d68c2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "file": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "18364c90-35ad-409f-99d1-f6404a28b283",
+          "title": "Add To Cart Multiple",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add multiple items to cart",
+              "fullTitle": "Add To Cart Multiple Should add multiple items to cart",
+              "timedOut": null,
+              "duration": 6280,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_addToCartMltple.default.addToCartMultiple('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-backpack').should('be.visible');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');\ncy.get('#add-to-cart-sauce-labs-bike-light').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#add-to-cart-sauce-labs-backpack`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#add-to-cart-sauce-labs-backpack`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/test/addToCartMltple.cy.js:11:51)",
+                "diff": null
+              },
+              "uuid": "448116ee-5a51-4885-864c-187a5f731625",
+              "parentUUID": "18364c90-35ad-409f-99d1-f6404a28b283",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "448116ee-5a51-4885-864c-187a5f731625"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6280,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "52149844-9c0d-4444-8f74-057f2f258ead",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\login.cy.js",
+      "file": "cypress\\e2e\\test\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2d58f84f-6bb4-4d5f-a980-de08849d12c9",
+          "title": "login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should login with valid credentials",
+              "fullTitle": "login Should login with valid credentials",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.inventory_item_name').should('be.visible');",
+              "err": {},
+              "uuid": "60864fed-b1ed-4502-be3e-91d654ed95ef",
+              "parentUUID": "2d58f84f-6bb4-4d5f-a980-de08849d12c9",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "60864fed-b1ed-4502-be3e-91d654ed95ef"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c1ffa8a9-6939-4c68-ac83-4d9211200055",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f4b652b3-f0a1-4985-b5b8-368b94e3b375",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add an Item to cart",
+              "fullTitle": "Add To Cart Should add an Item to cart",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_addToCart.default.addToCart('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');",
+              "err": {},
+              "uuid": "4bf793ef-a018-425b-a4b9-c2d2ac80d003",
+              "parentUUID": "f4b652b3-f0a1-4985-b5b8-368b94e3b375",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "4bf793ef-a018-425b-a4b9-c2d2ac80d003"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "9aad39d7-4a64-4b2d-8fde-ec906e0316d6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "file": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7470b16f-7f5f-4847-8cdd-cc5b3bc4a7b5",
+          "title": "Add To Cart Multiple",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add multiple items to cart",
+              "fullTitle": "Add To Cart Multiple Should add multiple items to cart",
+              "timedOut": null,
+              "duration": 6354,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_addToCartMltple.default.addToCartMultiple('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-backpack').should('be.visible');\ncy.get('#add-to-cart-sauce-labs-bike-light').should('be.visible');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#add-to-cart-sauce-labs-backpack`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#add-to-cart-sauce-labs-backpack`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/test/addToCartMltple.cy.js:11:51)",
+                "diff": null
+              },
+              "uuid": "4d877de9-e69c-4320-a2d1-c73d4d8693e4",
+              "parentUUID": "7470b16f-7f5f-4847-8cdd-cc5b3bc4a7b5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4d877de9-e69c-4320-a2d1-c73d4d8693e4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6354,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b6fb34cf-8372-4c5b-b8ce-1751eeffbbd6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\login.cy.js",
+      "file": "cypress\\e2e\\test\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "06bf1110-7958-41e2-8355-56a67142276f",
+          "title": "login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should login with valid credentials",
+              "fullTitle": "login Should login with valid credentials",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.inventory_item_name').should('be.visible');",
+              "err": {},
+              "uuid": "973d2858-f3fc-4fff-877f-b4972ceec21f",
+              "parentUUID": "06bf1110-7958-41e2-8355-56a67142276f",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "973d2858-f3fc-4fff-877f-b4972ceec21f"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "1fe70b78-27ac-4973-9188-a016dfc1f8f5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1b7b3bb2-8aae-4181-8e41-2baf78047a21",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add an Item to cart",
+              "fullTitle": "Add To Cart Should add an Item to cart",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_addToCart.default.addToCart('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');",
+              "err": {},
+              "uuid": "bcc1921b-9b6c-4eb7-b42d-4f6aa1c88f3a",
+              "parentUUID": "1b7b3bb2-8aae-4181-8e41-2baf78047a21",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "bcc1921b-9b6c-4eb7-b42d-4f6aa1c88f3a"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "15c82738-227e-4a01-bb5f-66851a73a4a8",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "file": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b326d761-eeae-4abc-a7fa-5c44bc5d7041",
+          "title": "Add Multiple To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add multiple items to cart",
+              "fullTitle": "Add Multiple To Cart Should add multiple items to cart",
+              "timedOut": null,
+              "duration": 2274,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_addToCartMltple.default.addToCartMultiple('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-backpack', '#add-to-cart-sauce-labs-bike-light', '#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');",
+              "err": {
+                "message": "CypressError: `cy.get()` only accepts an options object for its second argument. You passed #add-to-cart-sauce-labs-bike-light\n\nhttps://on.cypress.io/get",
+                "estack": "CypressError: `cy.get()` only accepts an options object for its second argument. You passed #add-to-cart-sauce-labs-bike-light\n\nhttps://on.cypress.io/get\n    at Context.get (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:143115:85)\n    at wrapped (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:157809:43)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/test/addToCartMltple.cy.js:11:11)",
+                "diff": null
+              },
+              "uuid": "cfa15340-7643-40b1-bb89-46281de7bfbe",
+              "parentUUID": "b326d761-eeae-4abc-a7fa-5c44bc5d7041",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cfa15340-7643-40b1-bb89-46281de7bfbe"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2274,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5a6e26b7-aa06-4413-be9a-95f55d9ff046",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\login.cy.js",
+      "file": "cypress\\e2e\\test\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "886a8af1-236d-47e3-b8a0-1082cd9e087c",
+          "title": "login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should login with valid credentials",
+              "fullTitle": "login Should login with valid credentials",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.inventory_item_name').should('be.visible');",
+              "err": {},
+              "uuid": "57114e53-5cdd-4d04-80ae-e50b6ad55a5a",
+              "parentUUID": "886a8af1-236d-47e3-b8a0-1082cd9e087c",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "57114e53-5cdd-4d04-80ae-e50b6ad55a5a"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "99ffe8d5-a420-45a6-817f-cadb55567f03",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a94b95e5-4453-4fe8-bed1-9771ca18def1",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add an Item to cart",
+              "fullTitle": "Add To Cart Should add an Item to cart",
+              "timedOut": null,
+              "duration": 1995,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_addToCart.default.addToCart('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');",
+              "err": {},
+              "uuid": "700b1956-03a1-4a42-9734-fe8d4932e2eb",
+              "parentUUID": "a94b95e5-4453-4fe8-bed1-9771ca18def1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "700b1956-03a1-4a42-9734-fe8d4932e2eb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1995,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

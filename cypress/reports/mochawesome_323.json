@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 5,
+    "failures": -4,
+    "start": "2022-12-03T01:57:03.472Z",
+    "end": "2022-12-03T01:57:03.512Z",
+    "duration": 40,
+    "testsRegistered": 5,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 4,
+    "hasOther": true,
+    "skipped": 5,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "53f11460-8d48-4ffc-83ac-01ffd327a0f7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "84572000-a709-4898-a8d7-c0d1bf2dc0db",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add an Item to cart",
+              "fullTitle": "Add To Cart Should add an Item to cart",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_addToCart.default.addToCart('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');\ncy.get('#react-burger-menu-btn');",
+              "err": {},
+              "uuid": "6649da92-0f53-4bcd-917b-adfd8079a08e",
+              "parentUUID": "84572000-a709-4898-a8d7-c0d1bf2dc0db",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Should checkout with multiple items in cart",
+              "fullTitle": "Add To Cart Should checkout with multiple items in cart",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkout.default.checkout('Mickayla', 'Crossdale', 'JMACE25');\ncy.get('.complete-header').should('be.visible');",
+              "err": {},
+              "uuid": "ff01e790-6172-429b-9f34-fe8ad57094c3",
+              "parentUUID": "84572000-a709-4898-a8d7-c0d1bf2dc0db",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Should have a single item in cart",
+              "fullTitle": "Add To Cart Should have a single item in cart",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkout.default.checkoutSingle();\ncy.get('.inventory_item_name').should('be.visible');",
+              "err": {},
+              "uuid": "1ae1aeb6-07d4-4427-a22f-0b1e365f7bc7",
+              "parentUUID": "84572000-a709-4898-a8d7-c0d1bf2dc0db",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Should have multiple items in cart overview",
+              "fullTitle": "Add To Cart Should have multiple items in cart overview",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkout.default.checkoutOverview('Mickayla', 'Crossdale', 'JMACE25');\ncy.get('.inventory_item_name').should('be.visible');",
+              "err": {},
+              "uuid": "e7e8a84a-1128-4c30-975b-9c71b5d8edb7",
+              "parentUUID": "84572000-a709-4898-a8d7-c0d1bf2dc0db",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Should add multiple items to cart",
+              "fullTitle": "Add To Cart Should add multiple items to cart",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkout.default.checkoutMultipleData('Mickayla', 'Crossdale', 'JMACE25');\ncy.get('.summary_total_label').should('have.text', '82.05');",
+              "err": {},
+              "uuid": "05e1ed95-1885-488c-8a82-08d7c570d8d6",
+              "parentUUID": "84572000-a709-4898-a8d7-c0d1bf2dc0db",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "6649da92-0f53-4bcd-917b-adfd8079a08e",
+            "ff01e790-6172-429b-9f34-fe8ad57094c3",
+            "1ae1aeb6-07d4-4427-a22f-0b1e365f7bc7",
+            "e7e8a84a-1128-4c30-975b-9c71b5d8edb7",
+            "05e1ed95-1885-488c-8a82-08d7c570d8d6"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

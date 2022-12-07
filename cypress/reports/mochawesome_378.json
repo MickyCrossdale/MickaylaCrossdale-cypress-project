@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-12-03T15:15:00.473Z",
+    "end": "2022-12-03T15:15:05.005Z",
+    "duration": 4532,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "42cbfe56-6aa2-46b5-baea-e89bdb0ffd77",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b4c59568-1235-4fa7-9a79-46930355b5c6",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should not checkout without inserting checkout information",
+              "fullTitle": "Add To Cart Should not checkout without inserting checkout information",
+              "timedOut": null,
+              "duration": 2303,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkoutInformation.default.checkoutInformation();\ncy.get('.error-message-container.error').should('be.visible');",
+              "err": {},
+              "uuid": "f2a065d8-4ffb-460a-85b2-14a0ba51c088",
+              "parentUUID": "b4c59568-1235-4fa7-9a79-46930355b5c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should not checkout without inserting Postal Code",
+              "fullTitle": "Add To Cart Should not checkout without inserting Postal Code",
+              "timedOut": null,
+              "duration": 2188,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\n_checkoutNoPostalCode.default.checkoutNoPostalCode('Mickayla', 'Crossdale');\ncy.get('.error-message-container.error').should('be.visible');",
+              "err": {},
+              "uuid": "31703329-5ad9-49e4-881a-a6b60d5a32bc",
+              "parentUUID": "b4c59568-1235-4fa7-9a79-46930355b5c6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f2a065d8-4ffb-460a-85b2-14a0ba51c088",
+            "31703329-5ad9-49e4-881a-a6b60d5a32bc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4491,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-11-30T21:39:44.357Z",
+    "end": "2022-11-30T21:39:45.448Z",
+    "duration": 1091,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "42cdffa3-b31d-4951-ad68-19a2ae9aeb10",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\removeItemCart.cy.js",
+      "file": "cypress\\e2e\\test\\removeItemCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ef9c76ef-cd1e-49ed-acde-a2e78b99e331",
+          "title": "Remove Item from Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should remove an Item to cart",
+              "fullTitle": "Remove Item from Cart Should remove an Item to cart",
+              "timedOut": null,
+              "duration": 1036,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_removeItemCart.default.removeFromCart('standard_user', 'secret_sauce');\ncy.get(removeFromcartBtn).should('be.visible'); //cy.get('#react-burger-menu-btn')",
+              "err": {
+                "message": "ReferenceError: removeFromcartBtn is not defined",
+                "estack": "ReferenceError: removeFromcartBtn is not defined\n    at Context.eval (webpack:///./cypress/e2e/test/removeItemCart.cy.js:12:15)",
+                "diff": null
+              },
+              "uuid": "caf153c3-6087-4f4e-b6b8-9b64fbd5fac9",
+              "parentUUID": "ef9c76ef-cd1e-49ed-acde-a2e78b99e331",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "caf153c3-6087-4f4e-b6b8-9b64fbd5fac9"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1036,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

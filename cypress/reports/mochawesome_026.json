@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-11-29T02:46:55.658Z",
+    "end": "2022-11-29T02:47:02.213Z",
+    "duration": 6555,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e098c508-eeff-415e-9827-c1f50e55cdaa",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "file": "cypress\\e2e\\test\\addToCartMltple.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1f5c83c0-0b5d-47b1-a261-6bbe34037c85",
+          "title": "Add Multiple To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add multiple items to cart",
+              "fullTitle": "Add Multiple To Cart Should add multiple items to cart",
+              "timedOut": null,
+              "duration": 6443,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_addToCartMltple.default.addToCartMultiple('standard_user', 'secret_sauce');\ncy.get('#add-to-cart-sauce-labs-backpack').should('be.visible');\ncy.get('#add-to-cart-sauce-labs-bike-light').should('be.visible');\ncy.get('#add-to-cart-sauce-labs-fleece-jacket').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#add-to-cart-sauce-labs-backpack`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#add-to-cart-sauce-labs-backpack`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/test/addToCartMltple.cy.js:11:51)",
+                "diff": null
+              },
+              "uuid": "2457cc25-315d-4c58-87c8-31c1eb580af5",
+              "parentUUID": "1f5c83c0-0b5d-47b1-a261-6bbe34037c85",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2457cc25-315d-4c58-87c8-31c1eb580af5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6443,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
